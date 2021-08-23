@@ -1,0 +1,740 @@
+/*
+**************
+Global Changes 
+**************
+*/
+
+body
+{
+    background-color: #181821;
+    color: #9a9cab;
+    transition: all 0.3s ease-in-out;
+}
+
+input
+{
+    background: transparent;
+    border: none;
+}
+
+a,
+a:hover
+{
+    color: #9a9cab;
+    text-decoration: none;
+}
+
+ul
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h4, h5
+{
+    color: #fff;
+}
+
+code
+{
+    font-size: .875em;
+    color: #d63384;
+    word-wrap: break-word;
+}
+
+.form-control
+{
+    background: transparent;
+    border: 1px solid #606477;
+    color: #fff;
+}
+
+.form-control:focus
+{
+    background: transparent;
+    outline: none;
+    color: #fff;
+}
+
+.btn-primary
+{
+    color: #fff;
+    background-color: #2c68c1;
+    border-color: #2c68c1;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-danger
+{
+    color: #fff;
+    background-color: #924048;
+    border-color: #943840;
+    transition: all 0.3s ease-in-out;
+}
+
+.bg-dash-failed
+{
+    background-color: #fc9494;
+}
+
+.bg-dash-success
+{
+    background-color: #83d8ae;
+}
+
+.cl-dash-success
+{
+    color: #83d8ae;
+}
+
+.cl-dash-failed
+{
+    color: #fc9494;
+}
+
+.ds-block
+{
+    display: block !important;
+}
+
+.ds-none
+{
+    display: none !important;
+}
+
+.mleft-20
+{
+    margin-left: 20%;
+}
+
+.badge.bg-primary {
+    background-color: #e3f3ff!important;
+    color: #5ea5db;
+}
+
+.badge.bg-info {
+    background-color: #eae8ff!important;
+    color: #7e78c2;
+}
+
+.badge.bg-warning {
+    background-color: #fff6e8!important;
+    color: #b5814a;
+}
+
+.badge.bg-success {
+    background-color: #e1f7ec!important;
+    color: #2f9c68;
+}
+
+.badge.bg-danger{
+    background-color: #a53a44 !important;
+    color: #fff;
+}
+
+/*
+************
+Start Navbar
+************
+*/
+
+nav
+{
+    padding: 15px 0;
+}
+
+.navbar .container
+{
+    display: block;
+}
+
+nav .peace ul
+{
+    list-style: none;
+}
+
+nav .peace li
+{
+    display: inline-block;
+    position: relative;
+}
+
+nav .peace li .dropdown-content
+{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    width: 140px;
+    border-radius: 5px;
+    background-color: #fff;
+    z-index: 5;
+    display: none;
+}
+
+nav .peace li .dropdown-content a
+{
+    display: block;
+    text-align: center;
+    padding: 10px 0;
+    color: #606477;
+}
+
+nav .peace li .dropdown-content a:hover
+{
+    background-color: #8b36a0;
+    color: #fff;
+}
+
+nav .col-md-4:first-of-type .peace i
+{
+    font-size: 18px;
+}
+
+nav .col-md-4:first-of-type .peace h4
+{
+    display: inline-block;
+}
+
+.col-md-4:first-of-type
+{
+    margin-top: 10px;
+}
+
+.col-md-4:first-of-type i
+{
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.col-md-4:first-of-type h4
+{
+    font-size: 16px;
+}
+
+.col-md-4:nth-of-type(2)
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-md-4:last-of-type .peace
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.col-md-4:last-of-type .peace i
+{
+    margin: 0 0 0 20px;
+    cursor: pointer;
+}
+
+/* Bootstrap Navbar Changes */
+
+.dropdown-menu
+{
+    min-width: auto;
+}
+
+.nav-link
+{
+    padding: 0;
+}
+
+.dropdown-toggle::after
+{
+    display: none;
+}
+
+/*
+************
+End Navbar
+************
+*/
+
+/*
+*************
+Start Sidebar
+*************
+*/
+
+.sidebar
+{
+    position: fixed;
+    top: 0;
+    left: -20%;
+    right: 0;
+    bottom: 0;
+    background-color: #1f1f2b;
+    width: 200px;
+    height: 200px;
+    width: 20%;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-left-0
+{
+    left: 0;
+}
+
+.sidebar .container
+{
+    max-width: 150px;
+}
+
+.sidebar .brand h4
+{
+    margin: 30px;
+    font-size: 20px;
+    color: #83d8ae;
+    cursor: pointer;
+}
+
+.sidebar .links ul li
+{
+    margin: 15px 0;
+}
+
+.sidebar .links ul li i
+{
+    margin-right: 15px;
+    font-size: 18px;
+}
+
+.sidebar .links ul li i.active
+{
+    color: #83d8ae;
+}
+
+.sidebar .links ul li a.active,
+.sidebar .links ul li a:hover
+{
+    color: #83d8ae;
+}
+
+.myAccordion
+{
+    display: none;
+}
+
+.myAccordion ul
+{
+    list-style: circle;
+    margin-left: 40px;
+}
+
+.myAccordion ul li a
+{
+    color: #9a9cab;
+}
+
+/*
+*************
+End Sidebar
+*************
+*/
+
+/*
+*************************
+Start Ecommerce Dashboard
+*************************
+*/
+
+.Ecommerce
+{
+    padding: 40px 0;
+}
+
+.Ecommerce .provider
+{
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.Ecommerce .provider .statics
+{
+    float: left;
+}
+
+.Ecommerce .provider .statics h4
+{
+    display: inline-block;
+}
+
+.Ecommerce .provider .statics span
+{
+    margin-left: 5px;
+}
+
+.Ecommerce .provider .icon
+{
+    float: right;
+    padding: 5px 12px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+/*
+*************************
+End Ecommerce Dashboard
+*************************
+*/
+
+/* Start Categories */
+
+.categories
+{
+    padding: 40px 0;
+}
+
+.categories .card
+{
+    background-color: #1f1f2b;
+}
+
+.categories .transactions .card
+{
+    min-height: 370px;
+}
+
+.categories .card .card-title h4
+{
+    font-size: 16px;
+}
+
+.categories .elements
+{
+    margin: 20px 0 0 0 ;
+}
+
+.categories .elements .element
+{
+    margin: 20px 0;
+}
+
+.categories .elements .element .icons
+{
+    display: inline-block;
+    background-color: #fc9494;
+    padding: 7px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.categories .elements .element .img
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.categories .elements .element .desc
+{
+    display: inline-block;
+    position: relative;
+    top: 10px;
+}
+
+.categories .elements .element .desc h5
+{
+    font-size: 15px;
+    display: inline-block;
+    margin: 0;
+}
+
+.categories .elements .element .desc span
+{
+    display: block;
+    font-size: 14px;
+}
+
+.categories .elements .element p
+{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 10px;
+}
+
+.categories .advanced .card
+{
+    min-height: 370px;
+}
+
+.categories .advanced .card p
+{
+    font-size: 14px;
+    margin: 0;
+}
+
+.categories .advanced .card button
+{
+    border: 1px solid #9a9cab;
+    background: none;
+    color: #fff;
+    margin-top: 10px;
+    padding: 3px 10px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+.categories .advanced .card button:hover
+{
+    background-color: #83d8ae;
+}
+
+.categories .sellers .card
+{
+    min-height: 370px;
+}
+
+/* End Categories */
+
+
+/*
+*************************
+Start Pages/Invoice.html
+*************************
+*/
+
+.Inv-Table
+{
+    padding: 40px 0;
+}
+
+.Inv-Table th
+{
+    padding: 15px 20px!important;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.Inv-Table td
+{
+    padding: 15px 20px!important;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.Inv-Table td i
+{
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/*
+*************************
+End Pages/Invoice.html
+*************************
+*/
+
+/*
+***************************************
+Start Pages/404.html & 500.html (Error)
+***************************************
+*/
+
+.error
+{
+    padding: 80px 0;
+}
+
+.error .desc
+{
+    margin-top: 80px;
+}
+
+.error .desc h2
+{
+    font-size: 180px;
+    color: #83d8ae;
+}
+
+.error .desc p
+{
+    max-width: 420px;
+}
+
+.error .desc p span
+{
+    color: #83d8ae;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.error .img img
+{
+    margin-top: 40px;
+    width: 400px;
+    height: 400px;
+}
+
+
+/*
+***************************************
+End Pages/404.html & 500.html (Error)
+***************************************
+*/
+
+/*
+***************************
+Start Login & Register Page
+***************************
+*/
+
+.login,
+.register
+{
+    margin: 220px auto;
+    text-align: center;
+}
+
+.login .title h5,
+.register .title h5
+{
+    color: #83d8ae;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login .title p,
+.register .title p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.global-input
+{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 1px solid #2d2d3f;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-weight: bold;
+}
+
+.global-input:focus,
+.global-input:focus
+{
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.checkBox
+{
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+label.check
+{
+    margin-right: 140px;
+}
+
+.login input[type="submit"],
+.register input[type="submit"]
+{
+    background: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.login input[type="submit"]:hover,
+.register input[type="submit"]:hover
+{
+    background-color: #83d8ae;
+}
+
+.register a
+{
+    color: #83d8ae;
+    font-weight: bold;
+}
+
+
+/*
+*************************
+End Login & Register Page
+*************************
+*/
+
+/*
+****************
+Start Price Page
+****************
+*/
+
+.price
+{
+    padding: 80px 0;
+}
+
+.price .card
+{
+    background: none;
+    border: 1px solid #2d2d3f;
+    box-shadow: 0px ​0px 4px #333;
+}
+
+.price .card .card-header
+{
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.price .card .card-header h4
+{
+    padding: 20px 0;
+    border-bottom: 1px solid #2d2d3f;
+    margin-bottom: 0;
+}
+
+.price .card .card-body
+{
+    padding: 0;
+}
+
+.price .card .card-body p
+{
+    padding: 20px 0;
+    margin: 0;
+    border-bottom: 1px solid #2d2d3f;
+}
+
+.price .card .card-body p span
+{
+    display: block;
+    font-size: 22px;
+    color: #2f9c68;
+    font-weight: bold;
+}
+
+.price .card .card-body button
+{
+    margin: 20px 0;
+    background: transparent;
+    border: 1px solid #585858;
+    color: #fff;
+    padding: 7px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.price .card .card-body button:hover
+{
+    transform: translate(5px, 0);
+    background-color: #2f9c68;
+}
+
+/*
+**************
+End Price Page
+**************
+*/
