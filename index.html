@@ -25,44 +25,69 @@
                 </div>
                 <div class="col-md-4">
                     <div class="peace">
-                        <i class="fas fa-search"></i>
-                        <input type="text" placeholder="type Some Thing">
+                        
+                        
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="peace">
                         <ul>
                             <li>
-                                <a href="#" id="">
+                                <a href="#" id="openSearch">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" id="openCanvas">
                                     <i class="fas fa-th"></i>
                                 </a>
+                                <div class="offCanvas">
+
+                                    <div class="title">
+                                        <h5>Activity Log</h5>
+                                    </div>
+                                    <div class="close" id="closeCanvas">
+                                        <i class="far fa-times-circle"></i>
+                                    </div>
+
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Title
+                                        </div>
+                                        <div class="card-body">
+                                            <p>
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel,
+                                                excepturi ad non aperiam error.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header">
+                                            Title
+                                        </div>
+                                        <div class="card-body">
+                                            <p>
+                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel,
+                                                excepturi ad non aperiam error.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li>
+                                <a href="#">
                                     <i class="far fa-comment-dots"></i>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li>
+                                <a href="#">
                                     <i class="fas fa-bell"></i>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <li>
+                                <a href="#">
                                     <i class="fas fa-user"></i>
                                 </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                </ul>
                             </li>
                         </ul>
                     </div>
@@ -99,16 +124,13 @@
                         <div class="myAccordion">
                             <ul>
                                 <li>
-                                    <a href="#">Apps Link</a>
+                                    <a href="pages/email.html">Email</a>
                                 </li>
                                 <li>
-                                    <a href="#">Apps Link</a>
+                                    <a href="pages/contact.html">Contact</a>
                                 </li>
                                 <li>
-                                    <a href="#">Apps Link</a>
-                                </li>
-                                <li>
-                                    <a href="#">Apps Link</a>
+                                    <a href="pages/file_manger.html">File Manger</a>
                                 </li>
                             </ul>
                         </div>
@@ -201,7 +223,9 @@
                             </ul>
                         </div>
                     </li>
-                    <li><i class="fas fa-bolt"></i> <a href="#">Charts</a></li>
+                    <li><i class="fas fa-bolt"></i>
+                        <a href="pages/charts.html">Charts</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -456,16 +480,9 @@
     <!-- End Categories -->
 
     <!-- Start Charts -->
-
     <section class="charts">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div id="barchart"></div>
-                </div>
-                <div class="col-md-4">
-                    <div id="barchart"></div>
-                </div>
                 <div class="col-md-4">
                     <div id="barchart"></div>
                 </div>
@@ -473,7 +490,6 @@
             <hr>
         </div>
     </section>
-
     <!-- End Charts -->
 
     <!-- JS Scripts -->

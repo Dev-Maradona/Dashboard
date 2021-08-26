@@ -20,7 +20,7 @@
                 <div class="col-md-4">
                     <div class="peace">
                         <i class="fas fa-bars" id="openSidebar"></i>
-                        <h4>Toasts</h4>
+                        <h4>Pageination</h4>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -208,118 +208,79 @@
     </div>
     <!-- End SideBar -->
 
-    <!-- Start Toasts -->
+    <!-- Start pageination -->
 
     <section style="padding: 0 0 40px 0;">
         <div class="container">
-            <h5>Basic</h5>
+            <h5>Overview</h5>
             <p>
-                To encourage extensible and predictable toasts, we recommend a header and body.
-                Toast headers use <code>display: flex</code> , allowing easy alignment of content thanks to our margin and flexbox utilities.
+                We use a large block of connected links for our pagination, making links hard to miss and easily <code>scalable—all</code> while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links.
+                Use a wrapping <code>nav</code> element to identify it as a navigation section to screen readers and other assistive technologies.
+                In addition, as pages likely have more than one such navigation section,
+                it’s advisable to provide a descriptive aria-label for the <code>nav</code> to reflect its purpose.
+                For example, if the pagination component is used to navigate between a set of search results,
+                an appropriate label could be <code>aria-label="Search results pages"</code>.
             </p>
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                  <img src="http://placehold.it/100/fff" class="rounded me-2" alt="...">
-                  <strong class="me-auto">Bootstrap</strong>
-                  <small>11 mins ago</small>
-                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                  Hello, world! This is a toast message.
-                </div>
+            <div class="First">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                    </ul>
+                </nav>
             </div>
-            <h5>Live Toast</h5>
+            <h5>Working with icons</h5>
             <p>
-                Click the button below to show a toast (positioned with our utilities in the lower right corner) that has been hidden by default.
+                Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code>aria</code> attributes.
             </p>
-            <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-    
-            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                <img src="http://placehold.it/100/fff" class="rounded me-2" alt="...">
-                <strong class="me-auto">Bootstrap</strong>
-                <small>11 mins ago</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                Hello, world! This is a toast message.
-                </div>
+            <div class="second">
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                </nav>
             </div>
+            <h5>Disabled and active states</h5>
+            <p>
+                Pagination links are customizable for different circumstances. Use <code>.disabled</code> for links that appear un-clickable and <code>.active</code> to indicate the current page.
+                While the <code>.disabled</code> class uses <code>pointer-events: none</code> to try to disable the link functionality of a attributes s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code>tabindex="-1"</code> on disabled links and use custom JavaScript to fully disable their functionality.
+            </p>
+            <div class="third">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                      </li>
+                    </ul>
+                </nav>
             </div>
-            <h5>Translucent</h5>
-            <p>Toasts are slightly translucent to blend in with what’s below them.</p>
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                  <img src="http://placehold.it/100/fff" class="rounded me-2" alt="...">
-                  <strong class="me-auto">Bootstrap</strong>
-                  <small class="text-muted">11 mins ago</small>
-                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                  Hello, world! This is a toast message.
-                </div>
-              </div>
-              <h5>Stacking</h5>
-              <p>
-                You can stack toasts by wrapping them in a toast container, which will vertically add some spacing.
-              </p>
-              <div class="toast-container">
-                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                  <div class="toast-header">
-                    <img src="http://placehold.it/100/fff" class="rounded me-2" alt="...">
-                    <strong class="me-auto">Bootstrap</strong>
-                    <small class="text-muted">just now</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                  </div>
-                  <div class="toast-body">
-                    See? Just like this.
-                  </div>
-                </div>
-              
-                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                  <div class="toast-header">
-                    <img src="http://placehold.it/100/fff" class="rounded me-2" alt="...">
-                    <strong class="me-auto">Bootstrap</strong>
-                    <small class="text-muted">2 seconds ago</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                  </div>
-                  <div class="toast-body">
-                    Heads up, toasts will stack automatically
-                  </div>
-                </div>
-              </div>
-              <h5>Custom content</h5>
-              <p>
-                Custom content
-                Customize your toasts by removing sub-components, tweaking them with utilities, or by adding your own markup. Here we’ve created a simpler toast by removing the default
-                <code>.toast-header</code> , adding a custom hide icon from Bootstrap Icons, and using some flexbox utilities to adjust the layout.
-              </p>
-              <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                  <div class="toast-body">
-                  Hello, world! This is a toast message.
-                 </div>
-                  <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-              </div>
-                <h5>Color schemes</h5>
-                <p>
-                    Building on the above example, you can create different toast color schemes with our color and background utilities. Here we’ve added .bg-primary and .text-white to the
-                    <code>.toast</code>, and then added <code>.btn-close-white</code> to our close button. For a crisp edge, we remove the default border with <code>.border-0.</code>
-                </p>
-                <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div class="d-flex">
-                      <div class="toast-body">
-                        Hello, world! This is a toast message.
-                      </div>
-                      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                </div>
         </div>
     </section>
 
-    <!-- End Toasts -->
+    <!-- End pageination -->
 
     <!-- JS Scripts -->
     <script src="../js/aos.js"></script>

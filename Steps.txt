@@ -1,0 +1,9 @@
+topic page, mixitup
+
+
+1.Make Topic Page And Add Topic Plugin
+2.Make Mixitup as Plugin/mixitup.html
+3.Animation on Scroll In as Plugin/scroll.html
+4.Make Some Modifies In Navbar to be much better and change search to another one Pull from top
+5.Change all Directions Like pages/Plugin/x.html
+6.Make Activity Log And Pull From Right

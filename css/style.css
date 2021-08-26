@@ -160,6 +160,62 @@ nav .peace li
     position: relative;
 }
 
+nav .peace li .offCanvas
+{
+    position: fixed;
+    background-color: #1f1f2b;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    z-index: 10;
+    transform: translate(100%, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+nav .peace li .offCanvas
+{
+    overflow: hidden;
+}
+
+nav .peace li .offCanvas .title
+{
+    float: left;
+    width: 75%;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+nav .peace li .offCanvas .close
+{
+    float: left;
+    margin: 0;
+    width: 20%;
+    margin-top: 30px;
+}
+
+nav .peace li .offCanvas .close i
+{
+    font-size: 26px;
+    color: #9a9cab;
+}
+
+nav .peace li .offCanvas .card
+{
+    width: 95%;
+    margin: 10px 2.5%;
+    text-align: left;
+    background: transparent;
+    border: 1px solid #5f5f5f;
+}
+
+nav .peace li .offCanvas .card .card-header
+{
+    border-bottom: 1px solid #5f5f5f;
+}
+
 nav .peace li .dropdown-content
 {
     position: absolute;
@@ -734,7 +790,267 @@ Start Price Page
 }
 
 /*
-**************
-End Price Page
-**************
+***************************
+Start pages/Email.html Page
+***************************
+*/
+
+.email-section
+{
+    padding: 40px 0;
+}
+
+.email-section .emails
+{
+    overflow-y: scroll;
+    height: 600px;
+}
+
+.email-section .emails .email
+{
+    margin: 20px 0;
+    padding: 20px 0;
+    border-radius: 5px;
+    max-width: 325px;
+}
+
+.email-section .emails .email:hover,
+.email-section .emails .email.active
+{
+    background-color: #1f1f2b;
+    cursor: pointer;
+}
+
+.email-section .emails .email .email-author
+{
+    overflow: hidden;
+}
+
+.email-section .emails .email .email-author img
+{
+    width: 35px;
+    height: 35px;
+}
+
+.email-section .emails .email .email-author .author-name
+{
+    color: #fff;
+}
+
+.email-section .emails .email .email-author .time
+{
+    float: right;
+}
+
+.email-section .emails .email .email-info .email-subject
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+.email-section .emails .email .email-info .email-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    opacity: .6;
+}
+
+/*
+*************************
+End pages/Email.html Page
+*************************
+*/
+
+/*
+*************************
+Start pages/contact.html Page
+*************************
+*/
+
+.contact-section
+{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact-section .peace
+{
+    background-color: #1f1f2b;
+    padding: 30px 0;
+    border-radius: 5px;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+.contact-section .info img
+{
+    width: 80px;
+    height: 80px;
+}
+
+.contact-section .info h5
+{
+    margin: 30px 0 10px 0;
+    font-size: 16px;
+}
+
+.contact-section .info span
+{
+    font-size: 16px;
+}
+
+.contact-section .contact div
+{
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 25px 0 0 0;
+}
+
+.contact-section .contact div i
+{
+    margin: 12px 0;
+    color: #fff;
+}
+
+/*
+*************************
+End pages/contact.html Page
+*************************
+*/
+
+
+/*
+*************************
+Start pages/Social.html Page
+*************************
+*/
+
+.social-section
+{
+    padding: 20px 0;
+}
+
+
+
+/*
+*************************
+End pages/Social.html Page
+*************************
+*/
+
+/*
+*************************
+Start pages/File_manger.html Page
+*************************
+*/
+
+.file_manger > .row
+{
+    margin: 0;
+}
+
+.fileMang-sideBar .upload-btn button
+{
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    background-color: #83d8ae;
+    padding: 6px;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.fileMang-sideBar .myDrive h5,
+.fileMang-sideBar .labels h5
+{
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.fileMang-sideBar .myDrive ul li,
+.fileMang-sideBar .labels ul li
+{
+    margin: 10px 0 !important;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.fileMang-sideBar .myDrive ul li i
+{
+    margin-right: 10px;
+}
+
+.fileMang-sideBar .myDrive ul li:hover,
+.fileMang-sideBar .labels ul li:hover
+{
+    padding-left: 10px;
+}
+
+.fileMang-section
+{
+    padding: 20px 0;
+}
+
+.fileMang-section .peace
+{
+    margin: 30px 0;
+}
+
+.fileMang-section .peace .icon
+{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.fileMang-section .peace .icon i
+{
+    font-size: 43px;
+    color: #9a9cab;
+}
+
+.fileMang-section .peace .info
+{
+    display: inline-block;
+}
+
+.fileMang-section .peace .info h6
+{
+    font-size: 14px;
+    margin: 0;
+}
+
+.fileMang-section .file
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    vertical-align: middle;
+    font-size: 40px;
+    text-align: center;
+    line-height: 130px;
+    background: #1f1f2b;
+}
+
+.fileMang-section .desc
+{
+    margin: 10px 0;
+}
+
+.fileMang-section .desc h6
+{
+    color: #fff;
+    font-size: 14px;
+}
+
+/*
+*************************
+End pages/File_manger.html Page
+*************************
 */

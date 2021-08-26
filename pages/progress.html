@@ -20,7 +20,7 @@
                 <div class="col-md-4">
                     <div class="peace">
                         <i class="fas fa-bars" id="openSidebar"></i>
-                        <h4>Toasts</h4>
+                        <h4>Progress</h4>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -208,118 +208,76 @@
     </div>
     <!-- End SideBar -->
 
-    <!-- Start Toasts -->
+    <!-- Start Progress -->
 
     <section style="padding: 0 0 40px 0;">
         <div class="container">
-            <h5>Basic</h5>
+            <h5>Basic Progress Bar</h5>
+            <div>
+                <div class="progress my-4">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <h5>Labels</h5>
+            <p>Add labels to your progress bars by placing text within the <code>.progress-bar.</code></p>
+            <div>
+                <div class="progress my-4">
+                    <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+                </div>
+            </div>
+            <h5>Backgrounds</h5>
+            <p>Use background utility classes to change the appearance of individual progress bars.</p>
+            <div>
+                <div class="progress my-4">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <h5>Striped</h5>
             <p>
-                To encourage extensible and predictable toasts, we recommend a header and body.
-                Toast headers use <code>display: flex</code> , allowing easy alignment of content thanks to our margin and flexbox utilities.
+                Add <code>.progress-bar-striped</code> to any <code>.progress-bar</code> to apply a stripe via CSS gradient over the progress bar’s background color.
             </p>
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                  <img src="http://placehold.it/100/fff" class="rounded me-2" alt="...">
-                  <strong class="me-auto">Bootstrap</strong>
-                  <small>11 mins ago</small>
-                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            <div>
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <div class="toast-body">
-                  Hello, world! This is a toast message.
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-            </div>
-            <h5>Live Toast</h5>
-            <p>
-                Click the button below to show a toast (positioned with our utilities in the lower right corner) that has been hidden by default.
-            </p>
-            <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
-    
-            <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
-            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                <img src="http://placehold.it/100/fff" class="rounded me-2" alt="...">
-                <strong class="me-auto">Bootstrap</strong>
-                <small>11 mins ago</small>
-                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
-                <div class="toast-body">
-                Hello, world! This is a toast message.
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress my-4">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                 </div>
             </div>
-            </div>
-            <h5>Translucent</h5>
-            <p>Toasts are slightly translucent to blend in with what’s below them.</p>
-            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="toast-header">
-                  <img src="http://placehold.it/100/fff" class="rounded me-2" alt="...">
-                  <strong class="me-auto">Bootstrap</strong>
-                  <small class="text-muted">11 mins ago</small>
-                  <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                  Hello, world! This is a toast message.
-                </div>
-              </div>
-              <h5>Stacking</h5>
-              <p>
-                You can stack toasts by wrapping them in a toast container, which will vertically add some spacing.
-              </p>
-              <div class="toast-container">
-                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                  <div class="toast-header">
-                    <img src="http://placehold.it/100/fff" class="rounded me-2" alt="...">
-                    <strong class="me-auto">Bootstrap</strong>
-                    <small class="text-muted">just now</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                  </div>
-                  <div class="toast-body">
-                    See? Just like this.
-                  </div>
-                </div>
-              
-                <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
-                  <div class="toast-header">
-                    <img src="http://placehold.it/100/fff" class="rounded me-2" alt="...">
-                    <strong class="me-auto">Bootstrap</strong>
-                    <small class="text-muted">2 seconds ago</small>
-                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                  </div>
-                  <div class="toast-body">
-                    Heads up, toasts will stack automatically
-                  </div>
-                </div>
-              </div>
-              <h5>Custom content</h5>
-              <p>
-                Custom content
-                Customize your toasts by removing sub-components, tweaking them with utilities, or by adding your own markup. Here we’ve created a simpler toast by removing the default
-                <code>.toast-header</code> , adding a custom hide icon from Bootstrap Icons, and using some flexbox utilities to adjust the layout.
-              </p>
-              <div class="toast align-items-center" role="alert" aria-live="assertive" aria-atomic="true">
-                <div class="d-flex">
-                  <div class="toast-body">
-                  Hello, world! This is a toast message.
-                 </div>
-                  <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-                </div>
-              </div>
-                <h5>Color schemes</h5>
-                <p>
-                    Building on the above example, you can create different toast color schemes with our color and background utilities. Here we’ve added .bg-primary and .text-white to the
-                    <code>.toast</code>, and then added <code>.btn-close-white</code> to our close button. For a crisp edge, we remove the default border with <code>.border-0.</code>
-                </p>
-                <div class="toast align-items-center text-white bg-primary border-0" role="alert" aria-live="assertive" aria-atomic="true">
-                    <div class="d-flex">
-                      <div class="toast-body">
-                        Hello, world! This is a toast message.
-                      </div>
-                      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-                    </div>
-                </div>
         </div>
     </section>
 
-    <!-- End Toasts -->
+    <!-- End Progress -->
 
     <!-- JS Scripts -->
     <script src="../js/aos.js"></script>
