@@ -4,290 +4,386 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Scripts -->
+
+    <!-- CSS Styles -->
     <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Bootstrap 5 Admin Dashboard</title>
+    <link rel="stylesheet" href="css/perfect-scrollbar.css">
+    <link rel="stylesheet" href="css/c3.css">
+    <link rel="stylesheet" href="css/next-sidebar.css">
+    <link rel="stylesheet" href="css/testStyle.css">
+    <title>Ecommerce Dashboard</title>
 </head>
-<body>
+<body class="app">
 
-    <!-- Start Nav Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="peace">
-                        <i class="fas fa-bars" id="openSidebar"></i>
-                        <h4>Dashboard</h4>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="peace">
-                        
-                        
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="peace">
-                        <ul>
-                            <li>
-                                <a href="#" id="openSearch">
-                                    <i class="fas fa-search"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" id="openCanvas">
-                                    <i class="fas fa-th"></i>
-                                </a>
-                                <div class="offCanvas">
-
-                                    <div class="title">
-                                        <h5>Activity Log</h5>
-                                    </div>
-                                    <div class="close" id="closeCanvas">
-                                        <i class="far fa-times-circle"></i>
-                                    </div>
-
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Title
-                                        </div>
-                                        <div class="card-body">
-                                            <p>
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel,
-                                                excepturi ad non aperiam error.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Title
-                                        </div>
-                                        <div class="card-body">
-                                            <p>
-                                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni vel,
-                                                excepturi ad non aperiam error.
-                                            </p>
-                                        </div>
-                                    </div>
+    <!-- Start Sidebar -->
+    <div class="sidebar">
+        <div class="sidebar-inner">
+            <div class="sidebar-logo">
+                <div class="d-flex align-items-center flex-nowrap">
+                    <a class="sidebar-link text-decoration-none" href="#">
+                        <div class="d-flex align-items-center flex-nowrap">
+                            <div class="logo-sm">
+                                <div class="logo d-flex align-items-center justify-content-center">
+                                    Logo
                                 </div>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="far fa-comment-dots"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fas fa-bell"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="fas fa-user"></i>
-                                </a>
-                            </li>
-                        </ul>
+                            </div>
+                            <div class="logo-text d-flex align-items-center justify-content-center">
+                                Logo
+                            </div>
+                        </div>
+                    </a>
+                    <div class="">
+                        <div class="mobile-toggle sidebar-toggle">
+                            <a href="#" class="text-decoration-none">
+                                <i class="far fa-times-circle"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <hr>
+            
+            <ul class="sidebar-menu scrollable position-relative pt-3">
+                <li class="nav-item dropdown">
+                    <a class="nav-link wave-effect" href="index.html">
+                        <span class="icon-holder">
+                            <i class="fas fa-home"></i>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link wave-effect" href="#">
+                        <span class="icon-holder">
+                            <i class="fas fa-code"></i>
+                        </span>
+                        <span class="title">Apps</span>
+                        <span class="arrow">
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="sidebar-link" href="pages/apps/contact.html">Contact</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/apps/email.html">Email</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/apps/file_manger.html">File Manger</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link wave-effect" href="#">
+                        <span class="icon-holder">
+                            <i class="fas fa-server"></i>
+                        </span>
+                        <span class="title">Components</span>
+                        <span class="arrow">
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="sidebar-link" href="pages/components/accordion.html">Accordion</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/components/alert.html">Alert</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/components/badge.html">Badge</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/components/button.html">Buttons</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/components/icons.html">Icons</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/components/modal.html">Modal</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/components/pageination.html">Pageinations</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/components/progress.html">Progress</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/components/spinners.html">Spinners</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/components/toasts.html">Toasts</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link wave-effect" href="#">
+                        <span class="icon-holder">
+                            <i class="far fa-folder-open"></i>
+                        </span>
+                        <span class="title">Pages</span>
+                        <span class="arrow">
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="sidebar-link" href="pages/pages/404.html">404</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/pages/500.html">500</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/pages/login.html">Login</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/pages/register.html">Register</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/pages/price.html">Price</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/pages/blank.html">Blank</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/pages/invoice.html">Invoice</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link wave-effect dropdown-toggle" href="#">
+                        <span class="icon-holder">
+                            <i class="fas fa-fingerprint"></i>
+                        </span>
+                        <span class="title">Plugins</span>
+                        <span class="arrow">
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="sidebar-link" href="pages/plugins/editor.html">Editor</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/plugins/mixitup.html">Mixitup</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link wave-effect dropdown-toggle" href="#">
+                        <span class="icon-holder">
+                            <i class="fas fa-paragraph"></i>
+                        </span>
+                        <span class="title">Form</span>
+                        <span class="arrow">
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="sidebar-link" href="pages/form/formElements.html">Form Element</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/form/formLayout.html">Form Layout</a>
+                        </li>
+                        <li>
+                            <a class="sidebar-link" href="pages/form/formValidation.html">Form Validation</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link wave-effect dropdown-toggle" href="pages/charts/charts.html">
+                        <span class="icon-holder">
+                            <i class="fas fa-chart-pie"></i>
+                        </span>
+                        <span class="title">Charts</span>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#">
+                        <span class="icon-holder">
+                            <i class="fas fa-folder-plus"></i>
+                        </span>
+                        <span class="title">Multiple Levels</span>
+                        <span class="arrow">
+                            <i class="fas fa-angle-right"></i>
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#">
+                            <span>Menu Item</span>
+                        </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#">
+                                <span class="title">Menu Items</span>
+                                <span class="arrow">
+                                    <i class="fas fa-angle-right"></i>
+                                </span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Menu Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Menu Item</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
-    </nav>
-    <!-- End Nav Bar -->
+    </div>
+    <!-- End Sidebar -->
 
-    <!-- Start SideBar -->
+    <!-- Start Navbar -->
+    <div class="container-wide">
+        <nav class="navbar navbar-expand navbar-light">
+            <div class="container">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item active">
+                        <a id="sidebar-toggle" class="sidebar-toggle nav-link" href="#">
+                            <i class="fas fa-bars"></i>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Left</a>
+                    </li> -->
+                </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item" id="openCanvas">
 
-    <div class="sidebar" id="sidebar">
-        <div class="container">
-            <div class="brand text-center">
-                <h4>Hymo</h4>
-            </div>
-            <div class="links">
-                <ul>
-                    <li>
-                        <i class="fas fa-bolt"></i>
-                        <a href="#" class="active">Dashboard</a>
-                        <div class="myAccordion">
-                            <ul>
-                                <li>
-                                    <a href="index.html">Ecommerce</a>
-                                </li>
-                            </ul>
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-th"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="far fa-comment-dots"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Notifiction</a>
+                                <a class="dropdown-item" href="#">Notifiction</a>
+                            </div>
                         </div>
                     </li>
-                    <li>
-                        <i class="fas fa-bolt"></i>
-                        <a href="#">Apps</a>
-                        <div class="myAccordion">
-                            <ul>
-                                <li>
-                                    <a href="pages/email.html">Email</a>
-                                </li>
-                                <li>
-                                    <a href="pages/contact.html">Contact</a>
-                                </li>
-                                <li>
-                                    <a href="pages/file_manger.html">File Manger</a>
-                                </li>
-                            </ul>
+                    <li class="nav-item">
+                        <div class="dropdown show">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="far fa-user"></i>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="#">Profile</a>
+                                <a class="dropdown-item" href="#">Logout</a>
+                            </div>
                         </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-bolt"></i>
-                        <a href="#">Components</a>
-                        <div class="myAccordion">
-                            <ul>
-                                <li>
-                                    <a href="pages/alert.html">Alert</a>
-                                </li>
-                                <li>
-                                    <a href="pages/icons.html">Icons</a>
-                                </li>
-                                <li>
-                                    <a href="pages/badge.html">Badge</a>
-                                </li>
-                                <li>
-                                    <a href="pages/button.html">Button</a>
-                                </li>
-                                <li>
-                                    <a href="pages/cards.html">Cards</a>
-                                </li>
-                                <li>
-                                    <a href="pages/toasts.html">Toasts</a>
-                                </li>
-                                <li>
-                                    <a href="pages/modal.html">Modal</a>
-                                </li>
-                                <li>
-                                    <a href="pages/pageination.html">Pagination</a>
-                                </li>
-                                <li>
-                                    <a href="pages/progress.html">Progress</a>
-                                </li>
-                                <li>
-                                    <a href="pages/spinners.html">Spinners</a>
-                                </li>
-                                <li>
-                                    <a href="pages/accordion.html">Accordion</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><i class="fas fa-bolt"></i> <a href="#">Plugins</a></li>
-                    <li>
-                        <i class="fas fa-bolt"></i>
-                        <a href="#">Pages</a>
-                        <div class="myAccordion">
-                            <ul>
-                                <li>
-                                    <a href="pages/invoice.html">Invoice</a>
-                                </li>
-                                <li>
-                                    <a href="pages/404.html">404 Page</a>
-                                </li>
-                                <li>
-                                    <a href="pages/500.html">500 Page</a>
-                                </li>
-                                <li>
-                                    <a href="pages/blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="pages/login.html">Login</a>
-                                </li>
-                                <li>
-                                    <a href="pages/register.html">Register</a>
-                                </li>
-                                <li>
-                                    <a href="pages/price.html">Price</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li>
-                        <i class="fas fa-bolt"></i>
-                        <a href="#">Form</a>
-                        <div class="myAccordion">
-                            <ul>
-                                <li>
-                                    <a href="pages/formElements.html">Elements</a>
-                                </li>
-                                <li>
-                                    <a href="pages/formLayout.html">Layout</a>
-                                </li>
-                                <li>
-                                    <a href="pages/formValidation.html">Validation</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li><i class="fas fa-bolt"></i>
-                        <a href="pages/charts.html">Charts</a>
                     </li>
                 </ul>
             </div>
+        </nav>
+    </div>
+    <!-- End Navbar -->
+
+    <!-- Start OffCanvas -->
+    <div class="offCanvas">
+        <div class="title">
+            <h5>Activity Log</h5>
+        </div>
+        <div class="close" id="closeCanvas">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                Lorem ipsum dolor sit.
+            </div>
+            <div class="card-body">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Fuga necessitatibus nam perspiciatis pariatur iure aliquam accusantium aperiam, 
+                    amet deleniti nihil voluptas a architecto veritatis praesentium dicta autem aut qui eum.
+                </p>
+            </div>
         </div>
     </div>
-    <!-- End SideBar -->
+    <!-- End OffCanvas -->
 
-    <!-- Start Ecommerce Charts And Statics -->
-    <div class="Ecommerce">
+    <!-- Start analyst -->
+    <section class="analyst">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="chart">
-                        <div id="chart" style="height:150px"></div>
+                <div class="col-md-3">
+                    <div class="statistic">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="info">
+                                    <h4>50.000</h4>
+                                    <p>Total Website Traffic</p>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chart">
+                                    <p> <span class="dynamicbar">Loading..</span> </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-5 offset-1">
-                            <div class="provider">
-                                <div class="statics">
-                                    <h4>30K</h4>
-                                    <span>-8%</span>
-                                    <p>Total Revenge</p>
+                <div class="col-md-3">
+                    <div class="statistic">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="info">
+                                    <h4>90,000k</h4>
+                                    <p>Website Impressions</p>
                                 </div>
-                                <div class="icon bg-dash-failed">
-                                    <i class="fas fa-level-down-alt"></i>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chart">
+                                    <p> <span class="dynamicbar">Loading..</span> </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 offset-1">
-                            <div class="provider">
-                                <div class="statics">
-                                    <h4>14k</h4>
-                                    <span>-12%</span>
-                                    <p>Total Revenge</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="statistic">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="info">
+                                    <h4>$40,000</h4>
+                                    <p>Total Online Sales</p>
                                 </div>
-                                <div class="icon bg-dash-failed">
-                                    <i class="fas fa-level-down-alt"></i>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="chart">
+                                    <p> <span class="dynamicbar">Loading..</span> </p>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5 offset-1">
-                            <div class="provider">
-                                <div class="statics">
-                                    <h4>574</h4>
-                                    <span>+9%</span>
-                                    <p>New Visitors</p>
-                                </div>
-                                <div class="icon bg-dash-success">
-                                    <i class="fas fa-level-up-alt"></i>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="statistic">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="info">
+                                    <h4>1,000</h4>
+                                    <p>Total Support Tickets</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-5 offset-1">
-                            <div class="provider">
-                                <div class="statics">
-                                    <h4>5982</h4>
-                                    <span>+9%</span>
-                                    <p>Total Visitors</p>
-                                </div>
-                                <div class="icon bg-dash-success">
-                                    <i class="fas fa-level-up-alt"></i>
+                            <div class="col-md-4">
+                                <div class="chart">
+                                    <p> <span class="dynamicbar">Loading..</span> </p>
                                 </div>
                             </div>
                         </div>
@@ -295,24 +391,248 @@
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Start Ecommerce Charts And Statics -->
+    </section>
+    <!-- End analyst -->
+
+    <!-- Start Sales Chart -->
+    <section class="main-chart">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="statistic">
+                        <div class="title">
+                            <h4>Sales Statistics</h4>
+                            <p>Vestibulum purus quam scelerisque, mollis nonummy metus</p>
+                        </div>
+                        <div class="chart">
+                            <div id="chart"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="visitors">
+                        <div class="title">
+                            <h6>For The Past 30 Days</h6>
+                            <p>
+                                You can See Full Details.
+                            </p>
+                        </div>
+                        <div class="chart">
+                            <div id="donutChart"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Sales Chart -->
 
     <!-- Start Categories -->
-    <section class="categories">
+    <section class="statistics">
         <div class="container">
+            <div class="row">
+                <!-- Start Email -->
+                <div class="col-md-4 email-statis">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Email Statistics</h4>
+                                <div class="elements">
+                                    <div id="gaugeChart"></div>
+                                    <p class="text-center">Total Emails Approved</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Email -->
+                <!-- Start Posts -->
+                <div class="col-md-4 post-statis">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Recent Posts</h4>
+                                <div class="elements">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="svg/avatars/1.svg">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="desc">
+                                                <h6>Smith</h6>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elements">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="svg/avatars/2.svg">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="desc">
+                                                <h6>John</h6>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elements">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="svg/avatars/3.svg">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="desc">
+                                                <h6>Dye</h6>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elements">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="svg/avatars/1.svg">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="desc">
+                                                <h6>Meto</h6>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elements">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="svg/avatars/2.svg">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="desc">
+                                                <h6>Mai</h6>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Posts -->
+                <!-- Start Items -->
+                <div class="col-md-4 item-statis">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="card-title">
+                                <h4>Recent Items</h4>
+                                <div class="elements">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="svg/avatars/3.svg">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="desc">
+                                                <h6>Smith</h6>
+                                                <p>
+                                                    Computer
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elements">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="svg/avatars/2.svg">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="desc">
+                                                <h6>Smith</h6>
+                                                <p>
+                                                    Computer
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elements">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="svg/avatars/1.svg">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="desc">
+                                                <h6>Smith</h6>
+                                                <p>
+                                                    Computer
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elements">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="svg/avatars/2.svg">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="desc">
+                                                <h6>Meto</h6>
+                                                <p>
+                                                    Computer
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elements">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <img src="svg/avatars/3.svg">
+                                        </div>
+                                        <div class="col-md-10">
+                                            <div class="desc">
+                                                <h6>Daami</h6>
+                                                <p>
+                                                    Computer
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Items -->
+            </div>
+
+            <!-- Start New Row -->
             <div class="row">
                 <!-- Start Transactions -->
                 <div class="col-md-4 transactions">
                     <div class="card">
                         <div class="card-body">
                             <div class="card-title">
-                                <h4>Transactions</h4>
+                                <h4>Brand Statistics</h4>
                                 <div class="elements">
                                     <div class="element">
                                         <div class="row">
                                             <div class="col-md-8">
-                                                <div class="icons">
+                                                <div class="icons bg-success">
                                                     <i class="fas fa-thumbs-up"></i>
                                                 </div>
                                                 <div class="desc">
@@ -328,7 +648,7 @@
                                     <div class="element">
                                         <div class="row">
                                             <div class="col-md-8">
-                                                <div class="icons">
+                                                <div class="icons bg-info">
                                                     <i class="fab fa-cc-visa"></i>
                                                 </div>
                                                 <div class="desc">
@@ -344,7 +664,7 @@
                                     <div class="element">
                                         <div class="row">
                                             <div class="col-md-8">
-                                                <div class="icons">
+                                                <div class="icons bg-danger">
                                                     <i class="fas fa-tv"></i>
                                                 </div>
                                                 <div class="desc">
@@ -360,7 +680,7 @@
                                     <div class="element">
                                         <div class="row">
                                             <div class="col-md-8">
-                                                <div class="icons">
+                                                <div class="icons bg-warning">
                                                     <i class="fas fa-shopping-cart"></i>
                                                 </div>
                                                 <div class="desc">
@@ -380,18 +700,11 @@
                 </div>
                 <!-- End Transactions -->
                 <!-- Start Advanced Security -->
-                <div class="col-md-4 advanced">
+                <div class="col-md-4">
                     <div class="card">
                         <div class="card-body">
                             <div class="desc text-center">
-                                <img src="svg/monkey.svg" alt="" width="100%" height="150px">
-                                <h5>Advanced Security</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, debitis at?
-                                    Asperiores numquam accusantium, ullam perferendis tenetur enim illum distinctio,
-                                    in eligendi obcaecati, earum explicabo id laborum voluptatum? Debitis, nesciunt
-                                </p>
-                                <button>Try For Free</button>
+                                <img src="svg/monkey.svg" style="margin-top: 60px;" alt="Monkey Image" width="100%" height="150px">
                             </div>
                         </div>
                     </div>
@@ -479,25 +792,18 @@
     </section>
     <!-- End Categories -->
 
-    <!-- Start Charts -->
-    <section class="charts">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div id="barchart"></div>
-                </div>
-            </div>
-            <hr>
-        </div>
-    </section>
-    <!-- End Charts -->
-
+    <!-- JS Scripts -->
     <!-- JS Scripts -->
     <script src="js/aos.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <script src="js/charts.js"></script>
+    <script src="js/perfect-scrollbar.min.js"></script>
+    <script src="js/next-sidebar.js"></script>
+    <script src="js/jquery.sparkline.min.js"></script>
+    <script src="js/d3-5.8.2.min.js" charset="utf-8"></script>
+    <script src="js/c3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

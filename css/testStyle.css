@@ -1,0 +1,692 @@
+/* Global Changes
+-----------------*/
+
+/* Variables
+------------*/
+
+:root {
+    --mainColor: #008000;
+    --bodyColor: #181821;
+    --boxColor: #1f1f2b;
+    --mainFontColor: #9a9cab;
+    --mainHeadColor: #ffffff;
+    --successColor: #83d8ae;
+    --dangerColor: #fc9494;
+    --borderColor: #2d2d3f;
+    --whiteColor: #fff;
+}
+
+body
+{
+    background-color: var(--bodyColor);
+    color: var(--mainFontColor);
+    transition: all 0.3s ease-in-out;
+}
+
+input{background: transparent;border: none;}
+
+a,
+a:hover{color: var(--mainFontColor);text-decoration: none;}
+
+ul{list-style: none;padding: 0;margin: 0;}
+
+h4, h5, h6{color: var(--mainHeadColor);}
+
+h6{margin: 0;}
+
+code{font-size: .875em;color: #d63384;word-wrap: break-word;}
+
+.container{max-width: 1105px !important;}
+
+.form-control
+{
+    background: transparent;
+    border: 1px solid #606477;
+    color: var(--whiteColor);
+}
+
+.form-control:focus
+{
+    background: transparent;
+    outline: none;
+    color: var(--whiteColor);
+}
+
+.card-body{min-height: 375px;}
+
+.btn-primary {
+    color: var(--whiteColor);
+    background-color: #2c68c1;
+    border-color: #2c68c1;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-secondary {
+    color: #fff;
+    background-color: #5d6368;
+    border-color: #5d6368;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: var(--successColor);
+    border-color: var(--successColor);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-info {
+    color: #000;
+    background-color: #278092;
+    border-color: #278092;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-warning {
+    color: #000;
+    background-color: #cea52b;
+    border-color: #cea52b;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-danger
+{
+    color: var(--whiteColor);
+    background-color: #924048;
+    border-color: #943840;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-light {
+    color: #000;
+    background-color: #c7ced6;
+    border-color: #c7ced6;
+    transition: all 0.3s ease-in-out;
+}
+
+.ds-block{display: block !important;}
+
+.ds-none{display: none !important;}
+
+.badge.bg-primary {
+    background-color: #e3f3ff!important;
+    color: #5ea5db;
+}
+
+.badge.bg-info {
+    background-color: #eae8ff!important;
+    color: #7e78c2;
+}
+
+.badge.bg-warning {
+    background-color: #fff6e8!important;
+    color: #b5814a;
+}
+
+.badge.bg-success {
+    background-color: #e1f7ec!important;
+    color: #2f9c68;
+}
+
+.badge.bg-danger{
+    background-color: #a53a44 !important;
+    color: #fff;
+}
+
+.bg-primary {
+    background-color: #2c68c1 !important;
+}
+  
+.bg-secondary {
+    background-color: #5d6368 !important;
+}
+  
+.bg-success {
+    background-color: var(--successColor) !important;
+}
+  
+.bg-info {
+    background-color: #278092 !important;
+}
+  
+.bg-warning {
+    background-color: #cea52b !important;
+}
+  
+.bg-danger {
+    background-color: #924048 !important;
+}
+  
+.bg-light {
+    background-color: #c7ced6 !important;
+}
+
+.mleft-20
+{
+    margin-left: 20%;
+}
+
+/* Start Navbar
+----------------*/
+
+.navbar .navbar-nav .nav-link i
+{color: rgba(255, 255, 255, 0.8);}
+
+.navbar-expand .navbar-nav .dropdown-menu {right: 0;}
+
+.dropdown-menu
+{
+    padding: 0 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+}
+
+.dropdown-item
+{padding: 0.5rem 1rem;transition: all 0.2s ease-in-out;}
+
+.dropdown-item:hover
+{
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    padding: 0.5rem 1.40rem;
+}
+
+.container-wide{min-height: 0;}
+
+.dropdown-toggle::after{display: none;}
+
+/* End Navbar
+-------------*/
+
+/* Start Sidebar
+----------------*/
+
+.sidebar{background-color: var(--boxColor);}
+
+/* Start Ecommerce Dashboard
+---------------------------*/
+
+/* Start Analyst */
+
+.analyst{margin: 10px 0;}
+
+.analyst .statistic{background-color: var(--boxColor);padding: 10px 0;}
+
+.analyst .statistic .info{text-indent: 10px}
+
+.analyst .statistic .chart{padding: 5px 0;}
+
+/* Start Sales */
+
+.main-chart{padding: 20px 0;margin: 20px 0;}
+
+.main-chart .statistic{background-color: var(--boxColor);padding: 10px 0;}
+
+.main-chart .statistic .title{text-indent: 10px;}
+
+.main-chart .visitors{background-color: var(--boxColor);padding: 10px;min-height: 415px;}
+
+/* End Ecommerce Dashboard
+---------------------------*/
+
+/* Start statistics 
+-----------------*/
+
+.statistics{padding: 40px 0;}
+
+.statistics .card{margin: 20px 0;}
+
+.statistics .card{background-color: var(--boxColor);}
+
+.statistics .card .card-title h4{font-size: 16px;}
+
+.statistics .elements{margin: 20px 0 0 0 ;}
+
+.statistics .elements .element{margin: 15px 0;}
+
+.statistics .elements .element .icons
+{
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.statistics .elements .element .img
+{display: inline-block;margin-right: 10px;}
+
+.statistics .elements .element .desc
+{display: inline-block;position: relative;top: 10px;}
+
+.statistics .elements .element .desc h5
+{
+    font-size: 15px;
+    display: inline-block;
+    margin: 0;
+}
+
+.statistics .elements .element .desc span
+{display: block;font-size: 14px;}
+
+.statistics .elements .element p
+{
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 10px;
+}
+
+.statistics .post-statis .elements img,
+.statistics .item-statis .elements img 
+{width: 40px;height: 40px;}
+
+.statistics .card p{font-size: 14px;margin: 0;}
+
+.statistics .sellers .card{min-height: 370px;}
+
+/* End statistics
+----------------*/
+
+/* Start Invoice.HTML
+-------------------*/
+
+.Inv-Table{padding: 40px 0;}
+
+.Inv-Table th
+{
+    padding: 15px 20px!important;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.Inv-Table td
+{
+    padding: 15px 20px!important;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.Inv-Table td i {margin: 0 10px;cursor: pointer;}
+
+/* Start Invoice.HTML
+--------------*/
+
+/* Start 404.HTML
+----------------*/
+
+.error {padding: 80px 0}
+
+.error .desc {margin-top: 80px;}
+
+.error .desc h2{font-size: 180px;color: var(--successColor);}
+
+.error .desc p{max-width: 420px;}
+
+.error .desc p span
+{color: var(--successColor);font-weight: bold;cursor: pointer;}
+
+.error .img img
+{
+    margin-top: 40px;
+    width: 400px;
+    height: 400px;
+}
+
+/* End 404.HTML
+----------------*/
+
+/* Start Login & Register
+----------------*/
+
+.login,
+.register
+{margin: 220px auto;text-align: center;}
+
+.login .title h5,
+.register .title h5
+{
+    color: var(--successColor);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login .title p,
+.register .title p
+{margin: 0;padding: 0;}
+
+.global-input
+{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 40px;
+    border-radius: 5px;
+    border: 1px solid #2d2d3f;
+    transition: all 0.2s ease-in-out;
+    color: #fff;
+    font-weight: bold;
+}
+
+.global-input:focus,
+.global-input:focus
+{
+    outline: none;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+}
+
+.checkBox
+{display: inline;margin: 0;padding: 0;}
+
+label.check{margin-right: 140px;}
+
+.login input[type="submit"],
+.register input[type="submit"]
+{background: none;transition: all 0.5s ease-in-out;}
+
+.login input[type="submit"]:hover,
+.register input[type="submit"]:hover
+{background-color: var(--successColor);}
+
+.register a
+{color: var(--successColor);font-weight: bold;}
+
+/* End Login & Register
+----------------*/
+
+/* Start Price Page
+------------------*/
+
+.price{padding: 80px 0;}
+
+.price .card
+{
+    background: none;
+    border: 1px solid var(--borderColor);
+    box-shadow: 0px ​0px 4px #333;
+}
+
+.price .card .card-header{padding: 0;margin-bottom: 0}
+
+.price .card .card-header h4
+{
+    padding: 20px 0;
+    border-bottom: 1px solid var(--borderColor);
+    margin-bottom: 0;
+}
+
+.price .card .card-body{padding: 0;}
+
+.price .card .card-body p
+{
+    padding: 20px 0;
+    margin: 0;
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.price .card .card-body p span
+{
+    display: block;
+    font-size: 22px;
+    color: var(--successColor);
+    font-weight: bold;
+}
+
+.price .card .card-body button
+{
+    margin: 20px 0;
+    background: transparent;
+    border: 1px solid var(--borderColor);
+    color: var(--whiteColor);
+    padding: 7px 30px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.price .card .card-body button:hover
+{
+    transform: translate(5px, 0);
+    background-color: var(--successColor);
+}
+
+/*
+***************************
+Start pages/Email.html Page
+***************************
+*/
+
+.email-section{padding: 40px 0;}
+
+.email-section .emails
+{overflow-y: scroll;height: 600px;}
+
+.email-section .emails .email
+{
+    margin: 20px 0;
+    padding: 20px 0;
+    border-radius: 5px;
+    max-width: 325px;
+}
+
+.email-section .emails .email:hover,
+.email-section .emails .email.active
+{background-color: var(--boxColor);cursor: pointer;}
+
+.email-section .emails .email .email-author
+{overflow: hidden;}
+
+.email-section .emails .email .email-author img
+{
+    width: 35px;
+    height: 35px;
+}
+
+.email-section .emails .email .email-author .author-name {color: #fff;}
+
+.email-section .emails .email .email-author .time {float: right;}
+
+.email-section .emails .email .email-info .email-subject
+{
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+}
+
+.email-section .emails .email .email-info .email-text {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    opacity: .6;
+}
+
+/*
+*************************
+End pages/Email.html Page
+*************************
+*/
+
+/*
+*************************
+Start pages/contact.html Page
+*************************
+*/
+
+.contact-section
+{padding: 40px 0;text-align: center;}
+
+.contact-section .peace
+{
+    background-color: var(--boxColor);
+    padding: 30px 0;
+    border-radius: 5px;
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+}
+
+.contact-section .info img
+{width: 80px;height: 80px;}
+
+.contact-section .info h5
+{margin: 30px 0 10px 0;font-size: 16px;}
+
+.contact-section .info span {font-size: 16px;}
+
+.contact-section .contact div
+{
+    display: inline-block;
+    padding: 0;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 25px 0 0 0;
+}
+
+.contact-section .contact div i
+{margin: 12px 0;color: #fff;}
+
+/* End Contact
+-------------*/
+
+/* Start Social
+--------------*/
+
+.social-section {padding: 20px 0;}
+
+/* End Social
+--------------*/
+
+/* Start File Manger 
+-------------------*/
+
+.file_manger > .row{margin: 0;}
+
+.fileMang-sideBar .upload-btn button
+{
+    width: 100%;
+    margin: 50px 0 10px 0;
+    border: none;
+    background-color: var(--successColor);
+    padding: 6px;
+    border-radius: 5px;
+    color: var(--whiteColor);
+}
+
+.fileMang-sideBar .myDrive h5,
+.fileMang-sideBar .labels h5
+{font-size: 14px;margin: 20px 0;}
+
+.fileMang-sideBar .myDrive ul li,
+.fileMang-sideBar .labels ul li
+{
+    margin: 10px 0 !important;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.fileMang-sideBar .myDrive ul li i
+{margin-right: 10px}
+
+.fileMang-sideBar .myDrive ul li:hover,
+.fileMang-sideBar .labels ul li:hover
+{padding-left: 10px;}
+
+.fileMang-section
+{padding: 20px 0;}
+
+.fileMang-section .peace
+{margin: 30px 0;}
+
+.fileMang-section .peace .icon
+{display: inline-block;margin-right: 10px;}
+
+.fileMang-section .peace .icon i
+{font-size: 43px;color: #9a9cab;}
+
+.fileMang-section .peace .info {display: inline-block;}
+
+.fileMang-section .peace .info h6
+{font-size: 14px;margin: 0;}
+
+.fileMang-section .file
+{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    vertical-align: middle;
+    font-size: 40px;
+    text-align: center;
+    line-height: 130px;
+    background: var(--boxColor);
+}
+
+.fileMang-section .desc {margin: 10px 0}
+
+.fileMang-section .desc h6 {font-size: 14px;}
+
+/* End File Manger
+-----------------*/
+
+/* Start Canvas
+--------------*/
+
+.offCanvas
+{
+    position: fixed;
+    background-color: var(--boxColor);
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    z-index: 10;
+    transform: translate(100%, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+.offCanvas {overflow: hidden;}
+
+.offCanvas .title
+{
+    float: left;
+    width: 75%;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.offCanvas .close
+{
+    float: left;
+    margin: 0;
+    width: 20%;
+    margin-top: 30px;
+}
+
+.offCanvas .close i
+{font-size: 26px;color: #9a9cab;cursor: pointer;}
+
+.offCanvas .card
+{
+    width: 95%;
+    margin: 10px 2.5%;
+    text-align: left;
+    background: transparent;
+    border: 1px solid #5f5f5f;
+}
+
+.offCanvas .card .card-header
+{border-bottom: 1px solid #5f5f5f;}
+
+
+/* End Canvas
+--------------*/
