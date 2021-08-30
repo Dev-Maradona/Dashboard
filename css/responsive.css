@@ -1,1 +1,75 @@
 /* Make a design responsive and fix some Issues */
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .analyst .statistic{margin-bottom: 20px;}
+
+    .analyst .statistic .chart{display: none;}
+
+    .main-chart .statistic{margin-bottom: 20px;}
+
+    .post-statis .elements,
+    .item-statis .elements
+    {text-align: center;}
+
+    .post-statis .elements .row,
+    .item-statis .elements .row
+    {margin-bottom: 10px;}
+
+    .statistics .post-statis .elements img,
+    .statistics .item-statis .elements img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .statistics .card p{display: none;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+    .main-chart .statistic {
+        margin-bottom: 20px;
+    }
+    .analyst .statistic{
+        margin-bottom: 20px;
+    }
+    .analyst .statistic .chart {
+        display: none;
+    }
+    .post-statis .elements,
+    .item-statis .elements{
+        text-align: center;
+    }
+    .post-statis .elements .row,
+    .item-statis .elements .row{
+        margin-bottom: 10px;
+    }
+    .statistics .post-statis .elements img,
+    .statistics .item-statis .elements img {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .statistics .post-statis .elements img,
+    .statistics .item-statis .elements img
+    {width: 40px;height: 40px;margin-bottom: 0;}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .analyst .statistic
+    {max-width: 250px;max-height: 95px;}
+    .container{max-width: 890px;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {max-width: 1000px;}
+}

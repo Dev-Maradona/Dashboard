@@ -1,112 +1,112 @@
-/*
-**************
-Global Changes 
-**************
-*/
+/* Global Changes
+-----------------*/
+
+/* Variables
+------------*/
+
+:root {
+    --mainColor: #008000;
+    --bodyColor: #181821;
+    --boxColor: #1f1f2b;
+    --mainFontColor: #9a9cab;
+    --mainHeadColor: #ffffff;
+    --successColor: #83d8ae;
+    --dangerColor: #fc9494;
+    --borderColor: #2d2d3f;
+    --whiteColor: #fff;
+}
 
 body
 {
-    background-color: #181821;
-    color: #9a9cab;
+    background-color: var(--bodyColor);
+    color: var(--mainFontColor);
     transition: all 0.3s ease-in-out;
 }
 
-input
-{
-    background: transparent;
-    border: none;
-}
+input{background: transparent;border: none;}
 
 a,
-a:hover
-{
-    color: #9a9cab;
-    text-decoration: none;
-}
+a:hover{color: var(--mainFontColor);text-decoration: none;}
 
-ul
-{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
+ul{list-style: none;padding: 0;margin: 0;}
 
-h4, h5
-{
-    color: #fff;
-}
+h4, h5, h6{color: var(--mainHeadColor);}
 
-code
-{
-    font-size: .875em;
-    color: #d63384;
-    word-wrap: break-word;
-}
+h6{margin: 0;}
+
+code{font-size: .875em;color: #d63384;word-wrap: break-word;}
+
+.container{max-width: 1105px !important}
 
 .form-control
 {
     background: transparent;
     border: 1px solid #606477;
-    color: #fff;
+    color: var(--whiteColor);
 }
 
 .form-control:focus
 {
     background: transparent;
     outline: none;
-    color: #fff;
+    color: var(--whiteColor);
 }
 
-.btn-primary
-{
-    color: #fff;
+.card-body{min-height: 375px;}
+
+.btn-primary {
+    color: var(--whiteColor);
     background-color: #2c68c1;
     border-color: #2c68c1;
     transition: all 0.3s ease-in-out;
 }
 
+.btn-secondary {
+    color: #fff;
+    background-color: #5d6368;
+    border-color: #5d6368;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+    color: #fff;
+    background-color: var(--successColor);
+    border-color: var(--successColor);
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-info {
+    color: #000;
+    background-color: #278092;
+    border-color: #278092;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-warning {
+    color: #000;
+    background-color: #cea52b;
+    border-color: #cea52b;
+    transition: all 0.3s ease-in-out;
+}
+
 .btn-danger
 {
-    color: #fff;
+    color: var(--whiteColor);
     background-color: #924048;
     border-color: #943840;
     transition: all 0.3s ease-in-out;
 }
 
-.bg-dash-failed
-{
-    background-color: #fc9494;
+.btn-light {
+    color: #000;
+    background-color: #c7ced6;
+    border-color: #c7ced6;
+    transition: all 0.3s ease-in-out;
 }
 
-.bg-dash-success
-{
-    background-color: #83d8ae;
-}
+.ds-block{display: block !important;}
 
-.cl-dash-success
-{
-    color: #83d8ae;
-}
-
-.cl-dash-failed
-{
-    color: #fc9494;
-}
-
-.ds-block
-{
-    display: block !important;
-}
-
-.ds-none
-{
-    display: none !important;
-}
-
-.mleft-20
-{
-    margin-left: 20%;
-}
+.ds-none{display: none !important;}
 
 .badge.bg-primary {
     background-color: #e3f3ff!important;
@@ -133,381 +133,150 @@ code
     color: #fff;
 }
 
-/*
-************
-Start Navbar
-************
-*/
-
-nav
-{
-    padding: 15px 0;
+.bg-primary {
+    background-color: #2c68c1 !important;
+}
+  
+.bg-secondary {
+    background-color: #5d6368 !important;
+}
+  
+.bg-success {
+    background-color: var(--successColor) !important;
+}
+  
+.bg-info {
+    background-color: #278092 !important;
+}
+  
+.bg-warning {
+    background-color: #cea52b !important;
+}
+  
+.bg-danger {
+    background-color: #924048 !important;
+}
+  
+.bg-light {
+    background-color: #c7ced6 !important;
 }
 
-.navbar .container
+.mleft-20
 {
-    display: block;
+    margin-left: 20%;
 }
 
-nav .peace ul
-{
-    list-style: none;
-}
+/* Start Navbar
+----------------*/
 
-nav .peace li
-{
-    display: inline-block;
-    position: relative;
-}
+.navbar .navbar-nav .nav-link i
+{color: rgba(255, 255, 255, 0.8);}
 
-nav .peace li .offCanvas
-{
-    position: fixed;
-    background-color: #1f1f2b;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 50%;
-    z-index: 10;
-    transform: translate(100%, 0);
-    transition: all 0.2s ease-in-out;
-}
-
-nav .peace li .offCanvas
-{
-    overflow: hidden;
-}
-
-nav .peace li .offCanvas .title
-{
-    float: left;
-    width: 75%;
-    text-align: left;
-    margin-left: 5%;
-    margin-top: 30px;
-    margin-bottom: 20px;
-}
-
-nav .peace li .offCanvas .close
-{
-    float: left;
-    margin: 0;
-    width: 20%;
-    margin-top: 30px;
-}
-
-nav .peace li .offCanvas .close i
-{
-    font-size: 26px;
-    color: #9a9cab;
-}
-
-nav .peace li .offCanvas .card
-{
-    width: 95%;
-    margin: 10px 2.5%;
-    text-align: left;
-    background: transparent;
-    border: 1px solid #5f5f5f;
-}
-
-nav .peace li .offCanvas .card .card-header
-{
-    border-bottom: 1px solid #5f5f5f;
-}
-
-nav .peace li .dropdown-content
-{
-    position: absolute;
-    top: 30px;
-    right: 0px;
-    width: 140px;
-    border-radius: 5px;
-    background-color: #fff;
-    z-index: 5;
-    display: none;
-}
-
-nav .peace li .dropdown-content a
-{
-    display: block;
-    text-align: center;
-    padding: 10px 0;
-    color: #606477;
-}
-
-nav .peace li .dropdown-content a:hover
-{
-    background-color: #8b36a0;
-    color: #fff;
-}
-
-nav .col-md-4:first-of-type .peace i
-{
-    font-size: 18px;
-}
-
-nav .col-md-4:first-of-type .peace h4
-{
-    display: inline-block;
-}
-
-.col-md-4:first-of-type
-{
-    margin-top: 10px;
-}
-
-.col-md-4:first-of-type i
-{
-    margin-right: 15px;
-    cursor: pointer;
-}
-
-.col-md-4:first-of-type h4
-{
-    font-size: 16px;
-}
-
-.col-md-4:nth-of-type(2)
-{
-    margin-top: 10px;
-    text-align: center;
-}
-
-.col-md-4:last-of-type .peace
-{
-    margin-top: 10px;
-    text-align: center;
-}
-
-.col-md-4:last-of-type .peace i
-{
-    margin: 0 0 0 20px;
-    cursor: pointer;
-}
-
-/* Bootstrap Navbar Changes */
+.navbar-expand .navbar-nav .dropdown-menu {right: 0;}
 
 .dropdown-menu
 {
-    min-width: auto;
+    padding: 0 0;
+    margin: 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
 }
 
-.nav-link
+.dropdown-item
+{padding: 0.5rem 1rem;transition: all 0.2s ease-in-out;}
+
+.dropdown-item:hover
 {
-    padding: 0;
+    background-color: var(--mainColor);
+    color: var(--whiteColor);
+    padding: 0.5rem 1.40rem;
 }
 
-.dropdown-toggle::after
-{
-    display: none;
-}
+.container-wide{min-height: 0;}
 
-/*
-************
-End Navbar
-************
-*/
+.dropdown-toggle::after{display: none;}
 
-/*
-*************
-Start Sidebar
-*************
-*/
+/* End Navbar
+-------------*/
 
-.sidebar
-{
-    position: fixed;
-    top: 0;
-    left: -20%;
-    right: 0;
-    bottom: 0;
-    background-color: #1f1f2b;
-    width: 200px;
-    height: 200px;
-    width: 20%;
-    height: 100%;
-    transition: all 0.3s ease-in-out;
-}
+/* Start Sidebar
+----------------*/
 
-.sidebar-left-0
-{
-    left: 0;
-}
+.sidebar{background-color: var(--boxColor);}
 
-.sidebar .container
-{
-    max-width: 150px;
-}
+/* Start Ecommerce Dashboard
+---------------------------*/
 
-.sidebar .brand h4
-{
-    margin: 30px;
-    font-size: 20px;
-    color: #83d8ae;
-    cursor: pointer;
-}
+/* Start Analyst */
 
-.sidebar .links ul li
-{
-    margin: 15px 0;
-}
+.analyst{margin: 10px 0;}
 
-.sidebar .links ul li i
-{
-    margin-right: 15px;
-    font-size: 18px;
-}
+.analyst .statistic{background-color: var(--boxColor);padding: 10px 0;}
 
-.sidebar .links ul li i.active
-{
-    color: #83d8ae;
-}
+.analyst .statistic .info{text-indent: 10px}
 
-.sidebar .links ul li a.active,
-.sidebar .links ul li a:hover
-{
-    color: #83d8ae;
-}
+.analyst .statistic .chart{padding: 5px 0;}
 
-.myAccordion
-{
-    display: none;
-}
+/* Start Sales */
 
-.myAccordion ul
-{
-    list-style: circle;
-    margin-left: 40px;
-}
+.main-chart{padding: 20px 0;margin: 20px 0;}
 
-.myAccordion ul li a
-{
-    color: #9a9cab;
-}
+.main-chart .statistic{background-color: var(--boxColor);padding: 10px 0;}
 
-/*
-*************
-End Sidebar
-*************
-*/
+.main-chart .statistic .title{text-indent: 10px;}
 
-/*
-*************************
-Start Ecommerce Dashboard
-*************************
-*/
+.main-chart .visitors{background-color: var(--boxColor);padding: 10px;min-height: 415px;}
 
-.Ecommerce
-{
-    padding: 40px 0;
-}
+/* End Ecommerce Dashboard
+---------------------------*/
 
-.Ecommerce .provider
-{
-    overflow: hidden;
-    margin-top: 80px;
-}
+/* Start statistics 
+-----------------*/
 
-.Ecommerce .provider .statics
-{
-    float: left;
-}
+.statistics{padding: 40px 0;}
 
-.Ecommerce .provider .statics h4
+.statistics .card{margin: 20px 0;}
+
+.statistics .card{background-color: var(--boxColor);}
+
+.statistics .card .card-title h4{font-size: 16px;}
+
+.statistics .elements{margin: 20px 0 0 0 ;}
+
+.statistics .elements .element{margin: 15px 0;}
+
+.statistics .elements .element .icons
 {
     display: inline-block;
-}
-
-.Ecommerce .provider .statics span
-{
-    margin-left: 5px;
-}
-
-.Ecommerce .provider .icon
-{
-    float: right;
-    padding: 5px 12px;
-    border-radius: 5px;
-    color: #fff;
-    margin-top: 10px;
-}
-
-/*
-*************************
-End Ecommerce Dashboard
-*************************
-*/
-
-/* Start Categories */
-
-.categories
-{
-    padding: 40px 0;
-}
-
-.categories .card
-{
-    background-color: #1f1f2b;
-}
-
-.categories .transactions .card
-{
-    min-height: 370px;
-}
-
-.categories .card .card-title h4
-{
-    font-size: 16px;
-}
-
-.categories .elements
-{
-    margin: 20px 0 0 0 ;
-}
-
-.categories .elements .element
-{
-    margin: 20px 0;
-}
-
-.categories .elements .element .icons
-{
-    display: inline-block;
-    background-color: #fc9494;
     padding: 7px 12px;
     border-radius: 5px;
     margin-right: 10px;
     color: #fff;
 }
 
-.categories .elements .element .img
-{
-    display: inline-block;
-    margin-right: 10px;
-}
+.statistics .elements .element .img
+{display: inline-block;margin-right: 10px;}
 
-.categories .elements .element .desc
-{
-    display: inline-block;
-    position: relative;
-    top: 10px;
-}
+.statistics .elements .element .desc
+{display: inline-block;position: relative;top: 10px;}
 
-.categories .elements .element .desc h5
+.statistics .elements .element .desc h5
 {
     font-size: 15px;
     display: inline-block;
     margin: 0;
 }
 
-.categories .elements .element .desc span
-{
-    display: block;
-    font-size: 14px;
-}
+.statistics .elements .element .desc span
+{display: block;font-size: 14px;}
 
-.categories .elements .element p
+.statistics .elements .element p
 {
     text-align: right;
     margin: 0;
@@ -516,51 +285,21 @@ End Ecommerce Dashboard
     top: 10px;
 }
 
-.categories .advanced .card
-{
-    min-height: 370px;
-}
+.statistics .post-statis .elements img,
+.statistics .item-statis .elements img 
+{width: 40px;height: 40px;}
 
-.categories .advanced .card p
-{
-    font-size: 14px;
-    margin: 0;
-}
+.statistics .card p{font-size: 14px;margin: 0;}
 
-.categories .advanced .card button
-{
-    border: 1px solid #9a9cab;
-    background: none;
-    color: #fff;
-    margin-top: 10px;
-    padding: 3px 10px;
-    border-radius: 5px;
-    transition: all 0.2s ease-in-out;
-}
+.statistics .sellers .card{min-height: 370px;}
 
-.categories .advanced .card button:hover
-{
-    background-color: #83d8ae;
-}
+/* End statistics
+----------------*/
 
-.categories .sellers .card
-{
-    min-height: 370px;
-}
+/* Start Invoice.HTML
+-------------------*/
 
-/* End Categories */
-
-
-/*
-*************************
-Start Pages/Invoice.html
-*************************
-*/
-
-.Inv-Table
-{
-    padding: 40px 0;
-}
+.Inv-Table{padding: 40px 0;}
 
 .Inv-Table th
 {
@@ -576,51 +315,24 @@ Start Pages/Invoice.html
     vertical-align: middle;
 }
 
-.Inv-Table td i
-{
-    margin: 0 10px;
-    cursor: pointer;
-}
+.Inv-Table td i {margin: 0 10px;cursor: pointer;}
 
-/*
-*************************
-End Pages/Invoice.html
-*************************
-*/
+/* Start Invoice.HTML
+--------------*/
 
-/*
-***************************************
-Start Pages/404.html & 500.html (Error)
-***************************************
-*/
+/* Start 404.HTML
+----------------*/
 
-.error
-{
-    padding: 80px 0;
-}
+.error {padding: 80px 0}
 
-.error .desc
-{
-    margin-top: 80px;
-}
+.error .desc {margin-top: 80px;}
 
-.error .desc h2
-{
-    font-size: 180px;
-    color: #83d8ae;
-}
+.error .desc h2{font-size: 180px;color: var(--successColor);}
 
-.error .desc p
-{
-    max-width: 420px;
-}
+.error .desc p{max-width: 420px;}
 
 .error .desc p span
-{
-    color: #83d8ae;
-    font-weight: bold;
-    cursor: pointer;
-}
+{color: var(--successColor);font-weight: bold;cursor: pointer;}
 
 .error .img img
 {
@@ -629,40 +341,27 @@ Start Pages/404.html & 500.html (Error)
     height: 400px;
 }
 
+/* End 404.HTML
+----------------*/
 
-/*
-***************************************
-End Pages/404.html & 500.html (Error)
-***************************************
-*/
-
-/*
-***************************
-Start Login & Register Page
-***************************
-*/
+/* Start Login & Register
+----------------*/
 
 .login,
 .register
-{
-    margin: 220px auto;
-    text-align: center;
-}
+{margin: 220px auto;text-align: center;}
 
 .login .title h5,
 .register .title h5
 {
-    color: #83d8ae;
+    color: var(--successColor);
     font-weight: bold;
     cursor: pointer;
 }
 
 .login .title p,
 .register .title p
-{
-    margin: 0;
-    padding: 0;
-}
+{margin: 0;padding: 0;}
 
 .global-input
 {
@@ -684,91 +383,59 @@ Start Login & Register Page
 }
 
 .checkBox
-{
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
+{display: inline;margin: 0;padding: 0;}
 
-label.check
-{
-    margin-right: 140px;
-}
+label.check{margin-right: 140px;}
 
 .login input[type="submit"],
 .register input[type="submit"]
-{
-    background: none;
-    transition: all 0.5s ease-in-out;
-}
+{background: none;transition: all 0.5s ease-in-out;}
 
 .login input[type="submit"]:hover,
 .register input[type="submit"]:hover
-{
-    background-color: #83d8ae;
-}
+{background-color: var(--successColor);}
 
 .register a
-{
-    color: #83d8ae;
-    font-weight: bold;
-}
+{color: var(--successColor);font-weight: bold;}
 
+/* End Login & Register
+----------------*/
 
-/*
-*************************
-End Login & Register Page
-*************************
-*/
+/* Start Price Page
+------------------*/
 
-/*
-****************
-Start Price Page
-****************
-*/
-
-.price
-{
-    padding: 80px 0;
-}
+.price{padding: 80px 0;}
 
 .price .card
 {
     background: none;
-    border: 1px solid #2d2d3f;
+    border: 1px solid var(--borderColor);
     box-shadow: 0px ​0px 4px #333;
 }
 
-.price .card .card-header
-{
-    padding: 0;
-    margin-bottom: 0;
-}
+.price .card .card-header{padding: 0;margin-bottom: 0}
 
 .price .card .card-header h4
 {
     padding: 20px 0;
-    border-bottom: 1px solid #2d2d3f;
+    border-bottom: 1px solid var(--borderColor);
     margin-bottom: 0;
 }
 
-.price .card .card-body
-{
-    padding: 0;
-}
+.price .card .card-body{padding: 0;}
 
 .price .card .card-body p
 {
     padding: 20px 0;
     margin: 0;
-    border-bottom: 1px solid #2d2d3f;
+    border-bottom: 1px solid var(--borderColor);
 }
 
 .price .card .card-body p span
 {
     display: block;
     font-size: 22px;
-    color: #2f9c68;
+    color: var(--successColor);
     font-weight: bold;
 }
 
@@ -776,8 +443,8 @@ Start Price Page
 {
     margin: 20px 0;
     background: transparent;
-    border: 1px solid #585858;
-    color: #fff;
+    border: 1px solid var(--borderColor);
+    color: var(--whiteColor);
     padding: 7px 30px;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
@@ -786,7 +453,7 @@ Start Price Page
 .price .card .card-body button:hover
 {
     transform: translate(5px, 0);
-    background-color: #2f9c68;
+    background-color: var(--successColor);
 }
 
 /*
@@ -795,16 +462,10 @@ Start pages/Email.html Page
 ***************************
 */
 
-.email-section
-{
-    padding: 40px 0;
-}
+.email-section{padding: 40px 0;}
 
 .email-section .emails
-{
-    overflow-y: scroll;
-    height: 600px;
-}
+{overflow-y: scroll;height: 600px;}
 
 .email-section .emails .email
 {
@@ -816,15 +477,10 @@ Start pages/Email.html Page
 
 .email-section .emails .email:hover,
 .email-section .emails .email.active
-{
-    background-color: #1f1f2b;
-    cursor: pointer;
-}
+{background-color: var(--boxColor);cursor: pointer;}
 
 .email-section .emails .email .email-author
-{
-    overflow: hidden;
-}
+{overflow: hidden;}
 
 .email-section .emails .email .email-author img
 {
@@ -832,15 +488,9 @@ Start pages/Email.html Page
     height: 35px;
 }
 
-.email-section .emails .email .email-author .author-name
-{
-    color: #fff;
-}
+.email-section .emails .email .email-author .author-name {color: #fff;}
 
-.email-section .emails .email .email-author .time
-{
-    float: right;
-}
+.email-section .emails .email .email-author .time {float: right;}
 
 .email-section .emails .email .email-info .email-subject
 {
@@ -871,14 +521,11 @@ Start pages/contact.html Page
 */
 
 .contact-section
-{
-    padding: 40px 0;
-    text-align: center;
-}
+{padding: 40px 0;text-align: center;}
 
 .contact-section .peace
 {
-    background-color: #1f1f2b;
+    background-color: var(--boxColor);
     padding: 30px 0;
     border-radius: 5px;
     width: 23%;
@@ -887,21 +534,12 @@ Start pages/contact.html Page
 }
 
 .contact-section .info img
-{
-    width: 80px;
-    height: 80px;
-}
+{width: 80px;height: 80px;}
 
 .contact-section .info h5
-{
-    margin: 30px 0 10px 0;
-    font-size: 16px;
-}
+{margin: 30px 0 10px 0;font-size: 16px;}
 
-.contact-section .info span
-{
-    font-size: 16px;
-}
+.contact-section .info span {font-size: 16px;}
 
 .contact-section .contact div
 {
@@ -915,65 +553,38 @@ Start pages/contact.html Page
 }
 
 .contact-section .contact div i
-{
-    margin: 12px 0;
-    color: #fff;
-}
+{margin: 12px 0;color: #fff;}
 
-/*
-*************************
-End pages/contact.html Page
-*************************
-*/
+/* End Contact
+-------------*/
 
+/* Start Social
+--------------*/
 
-/*
-*************************
-Start pages/Social.html Page
-*************************
-*/
+.social-section {padding: 20px 0;}
 
-.social-section
-{
-    padding: 20px 0;
-}
+/* End Social
+--------------*/
 
+/* Start File Manger 
+-------------------*/
 
-
-/*
-*************************
-End pages/Social.html Page
-*************************
-*/
-
-/*
-*************************
-Start pages/File_manger.html Page
-*************************
-*/
-
-.file_manger > .row
-{
-    margin: 0;
-}
+.file_manger > .row{margin: 0;}
 
 .fileMang-sideBar .upload-btn button
 {
     width: 100%;
-    margin: 10px 0;
+    margin: 50px 0 10px 0;
     border: none;
-    background-color: #83d8ae;
+    background-color: var(--successColor);
     padding: 6px;
     border-radius: 5px;
-    color: #fff;
+    color: var(--whiteColor);
 }
 
 .fileMang-sideBar .myDrive h5,
 .fileMang-sideBar .labels h5
-{
-    font-size: 14px;
-    margin: 20px 0;
-}
+{font-size: 14px;margin: 20px 0;}
 
 .fileMang-sideBar .myDrive ul li,
 .fileMang-sideBar .labels ul li
@@ -984,48 +595,28 @@ Start pages/File_manger.html Page
 }
 
 .fileMang-sideBar .myDrive ul li i
-{
-    margin-right: 10px;
-}
+{margin-right: 10px}
 
 .fileMang-sideBar .myDrive ul li:hover,
 .fileMang-sideBar .labels ul li:hover
-{
-    padding-left: 10px;
-}
+{padding-left: 10px;}
 
 .fileMang-section
-{
-    padding: 20px 0;
-}
+{padding: 20px 0;}
 
 .fileMang-section .peace
-{
-    margin: 30px 0;
-}
+{margin: 30px 0;}
 
 .fileMang-section .peace .icon
-{
-    display: inline-block;
-    margin-right: 10px;
-}
+{display: inline-block;margin-right: 10px;}
 
 .fileMang-section .peace .icon i
-{
-    font-size: 43px;
-    color: #9a9cab;
-}
+{font-size: 43px;color: #9a9cab;}
 
-.fileMang-section .peace .info
-{
-    display: inline-block;
-}
+.fileMang-section .peace .info {display: inline-block;}
 
 .fileMang-section .peace .info h6
-{
-    font-size: 14px;
-    margin: 0;
-}
+{font-size: 14px;margin: 0;}
 
 .fileMang-section .file
 {
@@ -1035,22 +626,67 @@ Start pages/File_manger.html Page
     font-size: 40px;
     text-align: center;
     line-height: 130px;
-    background: #1f1f2b;
+    background: var(--boxColor);
 }
 
-.fileMang-section .desc
+.fileMang-section .desc {margin: 10px 0}
+
+.fileMang-section .desc h6 {font-size: 14px;}
+
+/* End File Manger
+-----------------*/
+
+/* Start Canvas
+--------------*/
+
+.offCanvas
 {
-    margin: 10px 0;
+    position: fixed;
+    background-color: var(--boxColor);
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 30%;
+    z-index: 10;
+    transform: translate(100%, 0);
+    transition: all 0.2s ease-in-out;
 }
 
-.fileMang-section .desc h6
+.offCanvas {overflow: hidden;}
+
+.offCanvas .title
 {
-    color: #fff;
-    font-size: 14px;
+    float: left;
+    width: 75%;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
-/*
-*************************
-End pages/File_manger.html Page
-*************************
-*/
+.offCanvas .close
+{
+    float: left;
+    margin: 0;
+    width: 20%;
+    margin-top: 30px;
+}
+
+.offCanvas .close i
+{font-size: 26px;color: #9a9cab;cursor: pointer;}
+
+.offCanvas .card
+{
+    width: 95%;
+    margin: 10px 2.5%;
+    text-align: left;
+    background: transparent;
+    border: 1px solid #5f5f5f;
+}
+
+.offCanvas .card .card-header
+{border-bottom: 1px solid #5f5f5f;}
+
+
+/* End Canvas
+--------------*/
