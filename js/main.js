@@ -1,8 +1,16 @@
+/**
+ * main.js
+ * this Page for Main Javascript file for Jquery Changes and charts
+ * code is readable you can modify or delete as you want
+ * Here also define some charts you can change as you want 
+ * Just read document
+ * https://c3js.org/examples.html
+*/
+
 /* Jquery Trigger */
 $(document).ready(function() {
 
     'use strict';
-
     /* Define Some Variables */
     var body = $('body');
     var openSidebar = $('#openSidebar');
@@ -44,24 +52,10 @@ $(document).ready(function() {
 });
 /* Jquery Trigger */
 
-
-/* Spark Line Chart */
-$(function() {
-  /** This code runs when everything has been loaded on the page */
-  /* Inline sparklines take their values from the contents of the tag */
-  $('.inlinesparkline').sparkline();
-
-  /* Sparklines can also take their values from the first argument passed to the sparkline() function */
-  var myvalues = [10,8,5,7,4,4,1];
-  $('.dynamicsparkline').sparkline(myvalues);
-
-  /* The second argument gives options such as specifying you want a bar chart */
-  $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green'} );
-
-  /* Use 'html' instead of an array of values to pass options to a sparkline with data in the tag */
-  $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );
-
-});
+/**
+ * Define Some Charts for main Page Index.html
+ * You can delete or change data as you like.
+*/
 
 /* Main Chart */
 var chart = c3.generate({
@@ -95,8 +89,10 @@ var chart = c3.generate({
   }
 });
 
-/* Gauge Chart */
-
+/*
+* Gauge Chart
+* Email Statistics
+*/
 var chart = c3.generate({
   bindto: '#gaugeChart',
   data: {
@@ -151,7 +147,10 @@ setTimeout(function () {
   });
 }, 5000);
 
-
+/*
+* Chart:
+* For The Past 30 Days
+*/
 var chart = c3.generate({
   bindto: '#donutChart',
   data: {
@@ -187,3 +186,5 @@ setTimeout(function () {
       ids: 'data2'
   });
 }, 2500);
+
+/* End Charts */
